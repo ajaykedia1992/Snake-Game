@@ -1,11 +1,10 @@
 
-//Name: Navi Arora
-//Email: naviarora@ymail.com
+//Name: Ajay Kedia
+//Email: ajaykedia1992@gmail.com
 //Language: C\C++ 
 //Category: Games\Graphics 
 //Description: its a game .a snake is moving you have to use it to eat some food . 
 //as you eat food your tail becomes longer and point count. 
-//downloaded from www.iCBSE.com
 
 
 
@@ -71,7 +70,7 @@ else if(ch==RIGHTARR)
 new_x=x[0]+1; 
 old_ch=ch; 
 if((new_x<2)|(new_y<2)|(new_x>79)|(new_y>22)) 
-out=1; /* HIGHEST POSSIBLE SCORE ÷ (78*21-6)*5 = 8160 ÷ 10,000 */ 
+out=1; /* HIGHEST POSSIBLE SCORE Ã· (78*21-6)*5 = 8160 Ã· 10,000 */ 
 for(i=1;i<length-!old_num;i++) /* NOT "length": TAIL-END MAY MOVE AWAY! */ 
 if((new_x==x[i])&(new_y==y[i])){ 
 out=1; 
@@ -106,7 +105,7 @@ x[i]=x[i-1];
 y[i]=y[i-1]; 
 if(i==1){ 
 gotoxy(x[i],y[i]); 
-putchar('Û'); 
+putchar('Ã›'); 
 } 
 } 
 x[0]=new_x; 
@@ -139,24 +138,24 @@ char i;
 
 
 clrscr(); /* FIRST TO DRAW A BOUNDARY for THE GAME */ 
-putchar('É'); 
+putchar('Ã‰'); 
 for(i=0;i<78;i++) 
-putchar('Í'); 
-putchar('»'); 
+putchar('Ã'); 
+putchar('Â»'); 
 gotoxy(1,23); 
-putchar('È'); 
+putchar('Ãˆ'); 
 for(i=0;i<78;i++) 
-putchar('Í'); 
-putchar('¼'); 
+putchar('Ã'); 
+putchar('Â¼'); 
 window(1,2,1,23); 
 for(i=0;i<21;i++) 
-cprintf("º"); 
+cprintf("Âº"); 
 window(80,2,80,23); 
 for(i=0;i<21;i++) 
-cprintf("º"); /* THE BOUNDARY IS DRAWN */ 
+cprintf("Âº"); /* THE BOUNDARY IS DRAWN */ 
 window(1,1,80,25); 
 gotoxy(38,12); 
-printf("ÛÛÛÛÛ"); /* THE "SNAKE" IS PUT for THE FIRST TIME */ 
+printf("Ã›Ã›Ã›Ã›Ã›"); /* THE "SNAKE" IS PUT for THE FIRST TIME */ 
 gotoxy(1,24); 
 printf("Welcome to the game of SNAKE!\n(Press any arrow key to start now," 
 " Escape to leave at any time...)"); /* WELCOME MESSAGE */ 
@@ -283,7 +282,7 @@ for(i=0;i<length;i++){
 /* fscanf(fp,"%d %d ",&px[length],&py[length]);*/ 
 fscanf(fp,"%c%c",&px[i],&py[i]); 
 gotoxy(px[i]-1,py[i]-1); 
-putchar('Û'); 
+putchar('Ã›'); 
 } 
 window(1,1,80,25); 
 gotoxy(30,24); 
